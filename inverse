@@ -15,25 +15,29 @@ def gya():
          gyo[0][0]*gyo[1][2]*gyo[2][1])
 
     if x == 0:
-        raise ValueError("逆行列は存在しない") 
-    y = 1/x 
+        return 1
+    else:
+        y = 1/x 
 
-    a= x * (gyo[1][1]*gyo[2][2]-gyo[1][2]*gyo[2][1])
-    b= -x * (gyo[0][1]*gyo[2][2]-gyo[0][2]*gyo[2][1])
-    c= x * (gyo[0][1]*gyo[1][2]-gyo[0][2]*gyo[1][1])
-    d= -x * (gyo[1][0]*gyo[2][2]-gyo[1][2]*gyo[2][0])
-    e= x * (gyo[0][0]*gyo[2][2]-gyo[0][2]*gyo[2][0])
-    f= -x * (gyo[0][0]*gyo[1][2]-gyo[0][2]*gyo[1][0])
-    g= x * (gyo[1][0]*gyo[2][1]-gyo[1][1]*gyo[2][0])
-    h= -x * (gyo[0][0]*gyo[2][1]-gyo[0][1]*gyo[2][0])
-    i= x * (gyo[0][0]*gyo[1][1]-gyo[0][1]*gyo[1][0])
+        a= y * (gyo[1][1]*gyo[2][2]-gyo[1][2]*gyo[2][1])
+        b= -y * (gyo[0][1]*gyo[2][2]-gyo[0][2]*gyo[2][1])
+        c= y * (gyo[0][1]*gyo[1][2]-gyo[0][2]*gyo[1][1])
+        d= -y * (gyo[1][0]*gyo[2][2]-gyo[1][2]*gyo[2][0])
+        e= y * (gyo[0][0]*gyo[2][2]-gyo[0][2]*gyo[2][0])
+        f= -y * (gyo[0][0]*gyo[1][2]-gyo[0][2]*gyo[1][0])
+        g= y * (gyo[1][0]*gyo[2][1]-gyo[1][1]*gyo[2][0])
+        h= -y * (gyo[0][0]*gyo[2][1]-gyo[0][1]*gyo[2][0])
+        i= y * (gyo[0][0]*gyo[1][1]-gyo[0][1]*gyo[1][0])
     
-    return [[a,b,c],[d,e,f],[g,h,i]]
+        return [[a,b,c],[d,e,f],[g,h,i]]
 
 
 
 z = gya()
-print(z[0][0], z[1][0], z[2][0])
-print(z[0][1], z[1][1], z[2][1])
-print(z[0][2], z[1][2], z[2][2])
+if z == 1:
+    print("逆行列は存在しない")
+else:
+    print(z[0][0], z[1][0], z[2][0])
+    print(z[0][1], z[1][1], z[2][1])
+    print(z[0][2], z[1][2], z[2][2])
  
