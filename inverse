@@ -7,14 +7,14 @@ import sys
 gyo = [list(map(float, input().split())) for l in range(3)]
 
 def gya():
-    x = gyo[0][0]*gyo[1][1]*gyo[2][2] + 
-        gyo[0][1]*gyo[1][2]*gyo[2][0] + 
-        gyo[0][2]*gyo[1][0]*gyo[2][1] - 
-        gyo[0][2]*gyo[1][1]*gyo[2][0] - 
-        gyo[0][1]*gyo[1][0]*gyo[2][2] - 
-        gyo[0][0]*gyo[1][2]*gyo[2][1]
+    x = (gyo[0][0]*gyo[1][1]*gyo[2][2] + 
+         gyo[0][1]*gyo[1][2]*gyo[2][0] + 
+         gyo[0][2]*gyo[1][0]*gyo[2][1] - 
+         gyo[0][2]*gyo[1][1]*gyo[2][0] - 
+         gyo[0][1]*gyo[1][0]*gyo[2][2] - 
+         gyo[0][0]*gyo[1][2]*gyo[2][1])
 
-    if x == 0
+    if x == 0:
         raise ValueError("逆行列は存在しない") 
     y = 1/x 
 
