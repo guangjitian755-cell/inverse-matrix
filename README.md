@@ -22,7 +22,7 @@ $ chmod +x inverse
 ```bash
 $ echo -e "2 1 1\n1 2 1\n0 1 2" | ./inverse
 ```
-入力  
+出力  
 ```bash
 0.600 -0.200 -0.200
 -0.400 0.800 -0.200
@@ -39,7 +39,7 @@ $ echo -e "2 1 1\n1 2 1\n0 1 2" | ./inverse
 ```bash
 $ echo -e "1 2 3\n4 5 6\n 7 8 9" | ./inverse
 ```  
-- 出力  
+出力  
 ```bash
 $ ERROR
 ```  
