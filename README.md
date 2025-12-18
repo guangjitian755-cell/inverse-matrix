@@ -17,7 +17,6 @@ $ chmod +x inverse
 ```
 
 ## 使用例
-- 入力
 ```bash
 $ echo -e "2 1 1\n1 2 1\n0 1 2" | ./inverse
 0.600 -0.200 -0.200
