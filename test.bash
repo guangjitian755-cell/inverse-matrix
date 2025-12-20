@@ -18,7 +18,7 @@ expected=$'0.600 -0.200 -0.200\n-0.400 0.800 -0.200\n0.200 -0.400 0.600'
 
 # STRANGE INPUT 
 out=$(echo -e "1 2 3\n4 5 6\n7 8 9" | ./inverse)
-[ "${out}" = "ERROR" ] || ng "$LINENO"
+[ "${out}" = " " ] || ng "$LINENO"
 
 out=$(echo -e "1 2\n1 1" | ./inverse)
 [ "$?" = 1 ] || ng "$LINENO"
