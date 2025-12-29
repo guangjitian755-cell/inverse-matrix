@@ -33,7 +33,7 @@ $ echo -e "2 1 1\n1 2 1\n0 1 2" | ./inverse
 以下の環境で動作確認を行いました。
 
 ### ローカル
-- Ubuntu 22.04 LTS
+- Ubuntu 24.04.3 LTS
 - Python 3.13.5
 
 ### リモート(GitHub Actions)
